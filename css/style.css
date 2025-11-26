@@ -2,91 +2,6 @@
    PORTFOLIO PERSONNEL - FEUILLE DE STYLE
    Projet de fin de session HTML/CSS
    ======================================== */
- /* ===========================
-   MENU MOBILE - CSS only
-   =========================== */
-
-/* checkbox visuelle cachée mais accessible */
-.nav-toggle {
-    position: absolute;
-    left: -9999px; /* cache hors écran */
-}
-
-/* hamburger button (déjà présent mais amélioré) */
-.hamburger {
-    display: none; /* affiché uniquement en mobile via media queries */
-    flex-direction: column;
-    gap: 6px;
-    cursor: pointer;
-    width: 32px;
-    height: 24px;
-    justify-content: center;
-    align-items: center;
-}
-
-/* traits du hamburger */
-.hamburger span {
-    display: block;
-    width: 28px;
-    height: 3px;
-    background-color: var(--primary-color);
-    border-radius: var(--radius-sm);
-    transition: transform 0.25s ease, opacity 0.25s ease;
-}
-
-/* --- comportement mobile --- */
-@media screen and (max-width: 768px) {
-    /* cacher le menu de bureau */
-    .nav-menu {
-        display: none;
-    }
-
-    /* afficher le hamburger */
-    .hamburger {
-        display: flex;
-    }
-
-    /* menu mobile style: colonne, positionné sous la barre */
-    .nav-menu {
-        flex-direction: column;
-        gap: var(--spacing-sm);
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background-color: var(--white);
-        padding: var(--spacing-md);
-        box-shadow: var(--shadow-md);
-        z-index: 999;
-    }
-
-    .nav-menu li {
-        margin: 0;
-    }
-
-    .nav-menu a {
-        display: block;
-        padding: 10px 12px;
-        border-radius: var(--radius-sm);
-    }
-
-    /* --- Afficher le menu quand la checkbox est cochée --- */
-    /* structure HTML : input#nav-toggle + label.hamburger + ul.nav-menu */
-    #nav-toggle:checked + .hamburger + .nav-menu {
-        display: flex;
-    }
-
-    /* transformer visuellement le hamburger en croix quand ouvert */
-    #nav-toggle:checked + .hamburger span:nth-child(1) {
-        transform: rotate(45deg) translate(5px, 5px);
-    }
-    #nav-toggle:checked + .hamburger span:nth-child(2) {
-        opacity: 0;
-    }
-    #nav-toggle:checked + .hamburger span:nth-child(3) {
-        transform: rotate(-45deg) translate(5px, -5px);
-    }
-}
 /* === VARIABLES CSS === */
 :root {
     /* Couleurs principales */
@@ -1195,4 +1110,5 @@ a:focus-visible {
         page-break-inside: avoid;
     }
 }
+
 

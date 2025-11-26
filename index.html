@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio personnel - Présentation de mes compétences et projets">
+    <title>Portfolio - Accueil</title>
+    <!-- Lien vers la feuille de style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- En-tête avec navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <h2>Mon Portfolio</h2>
+                </div>
+                <!-- Menu de navigation -->
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="active">Accueil</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="skills.html">Compétences</a></li>
+                    <li><a href="projects.html">Projets</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <!-- Bouton hamburger pour mobile -->
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contenu principal -->
+    <main>
+        <!-- Section héro (accueil) -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">Bonjour, je suis <span class="highlight">Mohamed Dramé</span></h1>
+                        <p class="hero-subtitle">Développeur Web Junior | Passionné par le code</p>
+                        <p class="hero-description">
+                            Créateur de sites web modernes et responsive. 
+                            Bienvenue sur mon portfolio où je partage mes projets et compétences.
+                        </p>
+                        <!-- Boutons d'action -->
+                        <div class="hero-buttons">
+                            <a href="projects.html" class="btn btn-primary">Voir mes projets</a>
+                            <a href="contact.html" class="btn btn-secondary">Me contacter</a>
+                        </div>
+                    </div>
+                    <!-- Image de profil -->
+                    <div class="hero-image">
+                        <div class="profile-pic">
+                            <!-- Remplacez par votre photo -->
+                            <img src="images/profile.jpg" alt="Photo de profil" onerror="this.src='https://via.placeholder.com/300x300/3498db/ffffff?text=Votre+Photo'">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section liens rapides -->
+        <section class="quick-links">
+            <div class="container">
+                <h2 class="section-title">Découvrez mon univers</h2>
+                <div class="cards-grid">
+                    <!-- Carte À propos -->
+                    <div class="card">
+                        <div class="card-icon">👤</div>
+                        <h3>À propos</h3>
+                        <p>Découvrez mon parcours, mes intérêts et ce qui me passionne.</p>
+                        <a href="about.html" class="card-link">En savoir plus →</a>
+                    </div>
+                    <!-- Carte Compétences -->
+                    <div class="card">
+                        <div class="card-icon">💻</div>
+                        <h3>Compétences</h3>
+                        <p>Les technologies et outils que je maîtrise au quotidien.</p>
+                        <a href="skills.html" class="card-link">Voir les compétences →</a>
+                    </div>
+                    <!-- Carte Projets -->
+                    <div class="card">
+                        <div class="card-icon">🚀</div>
+                        <h3>Projets</h3>
+                        <p>Mes réalisations et projets sur lesquels j'ai travaillé.</p>
+                        <a href="projects.html" class="card-link">Explorer les projets →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pied de page -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Mohamed Dramé. Tous droits réservés.</p>
+            <p>Projet de fin de session - HTML/CSS</p>
+        </div>
+    </footer>
+</body>
+</html>

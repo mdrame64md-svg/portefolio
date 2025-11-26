@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact - Entrez en contact avec moi">
+    <title>Portfolio - Contact</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- En-tête avec navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <h2>Mon Portfolio</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="skills.html">Compétences</a></li>
+                    <li><a href="projects.html">Projets</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contenu principal -->
+    <main>
+        <section class="contact-section">
+            <div class="container">
+                <h1 class="page-title">Contactez-moi</h1>
+                <p class="section-intro">
+                    Une question ? Un projet en tête ? N'hésitez pas à me contacter !
+                </p>
+
+                <div class="contact-container">
+                    <!-- Informations de contact -->
+                    <div class="contact-info">
+                        <h2>Restons en contact</h2>
+                        <p>
+                            Je suis toujours ouvert aux nouvelles opportunités et collaborations. 
+                            Que ce soit pour un projet, une question ou simplement pour échanger, 
+                            n'hésitez pas à me contacter.
+                        </p>
+
+                        <div class="info-items">
+                            <!-- Email -->
+                            <div class="info-item">
+                                <div class="info-icon">📧</div>
+                                <div class="info-content">
+                                    <h3>Email</h3>
+                                    <a href="mailto:mdrame64.md@egmail.com">mdrame64.md@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <!-- Téléphone -->
+                            <div class="info-item">
+                                <div class="info-icon">📱</div>
+                                <div class="info-content">
+                                    <h3>Téléphone</h3>
+                                    <a href="tel:+14385964313">+1 (438) 596-4313</a>
+                                </div>
+                            </div>
+
+                            <!-- Localisation -->
+                            <div class="info-item">
+                                <div class="info-icon">📍</div>
+                                <div class="info-content">
+                                    <h3>Localisation</h3>
+                                    <p>Montréal, QC, Canada</p>
+                                </div>
+                            </div>
+
+                            <!-- Disponibilité -->
+                            <div class="info-item">
+                                <div class="info-icon">⏰</div>
+                                <div class="info-content">
+                                    <h3>Disponibilité</h3>
+                                    <p>Lun - Ven, 9h00 - 17h00</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Réseaux sociaux -->
+                        <div class="social-links">
+                            <h3>Retrouvez-moi sur</h3>
+                            <div class="social-icons">
+                                <a href="#" class="social-icon" aria-label="GitHub">
+                                    <span>GitHub</span>
+                                </a>
+                                <a href="#" class="social-icon" aria-label="LinkedIn">
+                                    <span>LinkedIn</span>
+                                </a>
+                                <a href="#" class="social-icon" aria-label="Twitter">
+                                    <span>Twitter</span>
+                                </a>
+                                <a href="#" class="social-icon" aria-label="CodePen">
+                                    <span>CodePen</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Formulaire de contact -->
+                    <div class="contact-form-container">
+                        <h2>Envoyez-moi un message</h2>
+                        <form class="contact-form" action="#" method="post">
+                            <!-- Champ Nom -->
+                            <div class="form-group">
+                                <label for="nom">Nom <span class="required">*</span></label>
+                                <input 
+                                    type="text" 
+                                    id="nom" 
+                                    name="nom" 
+                                    required 
+                                    placeholder="Votre nom"
+                                    class="form-input">
+                            </div>
+
+                            <!-- Champ Prénom -->
+                            <div class="form-group">
+                                <label for="prenom">Prénom <span class="required">*</span></label>
+                                <input 
+                                    type="text" 
+                                    id="prenom" 
+                                    name="prenom" 
+                                    required 
+                                    placeholder="Votre prénom"
+                                    class="form-input">
+                            </div>
+
+                            <!-- Champ Email -->
+                            <div class="form-group">
+                                <label for="email">Adresse email <span class="required">*</span></label>
+                                <input 
+                                    type="email" 
+                                    id="email" 
+                                    name="email" 
+                                    required 
+                                    placeholder="votre.email@example.com"
+                                    class="form-input">
+                            </div>
+
+                            <!-- Champ Sujet -->
+                            <div class="form-group">
+                                <label for="sujet">Sujet</label>
+                                <input 
+                                    type="text" 
+                                    id="sujet" 
+                                    name="sujet" 
+                                    placeholder="Sujet de votre message"
+                                    class="form-input">
+                            </div>
+
+                            <!-- Champ Message -->
+                            <div class="form-group">
+                                <label for="message">Message <span class="required">*</span></label>
+                                <textarea 
+                                    id="message" 
+                                    name="message" 
+                                    required 
+                                    rows="6" 
+                                    placeholder="Écrivez votre message ici..."
+                                    class="form-textarea"></textarea>
+                            </div>
+
+                            <!-- Bouton d'envoi -->
+                            <button type="submit" class="btn btn-primary btn-full">
+                                Envoyer le message
+                            </button>
+
+                            <p class="form-note">
+                                <small>* Champs obligatoires</small>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pied de page -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Mohamed Dramé. Tous droits réservés.</p>
+            <p>Projet de fin de session - HTML/CSS</p>
+        </div>
+    </footer>
+</body>
+</html>

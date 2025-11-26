@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projets - Découvrez mes réalisations">
+    <title>Portfolio - Projets</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- En-tête avec navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <h2>Mon Portfolio</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="skills.html">Compétences</a></li>
+                    <li><a href="projects.html" class="active">Projets</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contenu principal -->
+    <main>
+        <section class="projects-section">
+            <div class="container">
+                <h1 class="page-title">Mes Projets</h1>
+                <p class="section-intro">
+                    Découvrez une sélection de mes réalisations récentes en développement web et logiciel.
+                </p>
+
+                <!-- Grille de projets -->
+                <div class="projects-grid">
+                    
+                    <!-- PROJET 1 - API REST Node.js/Express -->
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="images/project1.jpg" alt="API REST Gestion Objets Trouvés" onerror="this.src='https://via.placeholder.com/600x400/2ecc71/ffffff?text=API+REST+Project'">
+                            <div class="project-overlay">
+                                <a href="#" class="project-link">Voir le code →</a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="tag">Node.js</span>
+                                <span class="tag">Express</span>
+                                <span class="tag">MySQL</span>
+                                <span class="tag">REST API</span>
+                            </div>
+                            <h2>API REST - Gestion d'Objets Trouvés</h2>
+                            <p class="project-description">
+                                Développement d'une API REST complète pour gérer un système d'objets trouvés et de réclamations. 
+                                Architecture MVC avec Express.js, connexion à une base de données MySQL, 
+                                et système d'authentification sécurisé.
+                            </p>
+                            <div class="project-details">
+                                <div class="detail-item">
+                                    <strong>Durée:</strong> 4 semaines
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Type:</strong> Projet académique
+                                </div>
+                            </div>
+                            <ul class="project-features">
+                                <li>✓ Architecture RESTful complète</li>
+                                <li>✓ Gestion CRUD (Objets & Réclamations)</li>
+                                <li>✓ Authentification et autorisation</li>
+                                <li>✓ Connexion base de données MySQL</li>
+                                <li>✓ Variables d'environnement (.env)</li>
+                                <li>✓ Endpoints API documentés</li>
+                            </ul>
+                            <div class="project-tech-details">
+                                <h4>Technologies utilisées :</h4>
+                                <ul>
+                                    <li><strong>Backend:</strong> Node.js, Express.js</li>
+                                    <li><strong>Base de données:</strong> MySQL (mysql2)</li>
+                                    <li><strong>Packages:</strong> dotenv, nodemon</li>
+                                    <li><strong>Architecture:</strong> MVC (Model-View-Controller)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PROJET 2 - Site Web Restaurant -->
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="images/project2.jpg" alt="Projet Site Web Restaurant" onerror="this.src='https://via.placeholder.com/600x400/3498db/ffffff?text=Projet+Restaurant'">
+                            <div class="project-overlay">
+                                <a href="#" class="project-link">Voir le projet →</a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">Responsive</span>
+                            </div>
+                            <h2>Site Web Restaurant</h2>
+                            <p class="project-description">
+                                Création d'un site web moderne pour un restaurant fictif. 
+                                Le site présente le menu, les horaires et permet la réservation en ligne. 
+                                Design élégant avec animations CSS et navigation fluide.
+                            </p>
+                            <div class="project-details">
+                                <div class="detail-item">
+                                    <strong>Durée:</strong> 2 semaines
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Type:</strong> Projet académique
+                                </div>
+                            </div>
+                            <ul class="project-features">
+                                <li>✓ Design responsive mobile-first</li>
+                                <li>✓ Menu interactif avec filtres</li>
+                                <li>✓ Galerie d'images optimisée</li>
+                                <li>✓ Formulaire de réservation</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- PROJET 3 - Portfolio Photographe -->
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="images/project3.jpg" alt="Projet Portfolio Photographe" onerror="this.src='https://via.placeholder.com/600x400/e74c3c/ffffff?text=Portfolio+Photo'">
+                            <div class="project-overlay">
+                                <a href="#" class="project-link">Voir le projet →</a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS Grid</span>
+                                <span class="tag">Flexbox</span>
+                            </div>
+                            <h2>Portfolio Photographe</h2>
+                            <p class="project-description">
+                                Portfolio minimaliste pour un photographe professionnel. 
+                                Mise en valeur des images avec une galerie en grille et un design épuré. 
+                                Navigation intuitive et expérience utilisateur soignée.
+                            </p>
+                            <div class="project-details">
+                                <div class="detail-item">
+                                    <strong>Durée:</strong> 3 semaines
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Type:</strong> Projet personnel
+                                </div>
+                            </div>
+                            <ul class="project-features">
+                                <li>✓ Galerie CSS Grid responsive</li>
+                                <li>✓ Effet lightbox en CSS pur</li>
+                                <li>✓ Animations au scroll</li>
+                                <li>✓ Page de contact stylisée</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- PROJET 4 - Landing Page Produit -->
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="images/project4.jpg" alt="Projet Landing Page Produit" onerror="this.src='https://via.placeholder.com/600x400/9b59b6/ffffff?text=Landing+Page'">
+                            <div class="project-overlay">
+                                <a href="#" class="project-link">Voir le projet →</a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="tag">HTML5</span>
+                                <span class="tag">CSS3</span>
+                                <span class="tag">Animations</span>
+                            </div>
+                            <h2>Landing Page Produit</h2>
+                            <p class="project-description">
+                                Page de destination pour le lancement d'un produit tech. 
+                                Design moderne avec sections captivantes, call-to-actions efficaces 
+                                et animations subtiles pour capter l'attention des visiteurs.
+                            </p>
+                            <div class="project-details">
+                                <div class="detail-item">
+                                    <strong>Durée:</strong> 1 semaine
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Type:</strong> Challenge en ligne
+                                </div>
+                            </div>
+                            <ul class="project-features">
+                                <li>✓ Design moderne et attractif</li>
+                                <li>✓ Sections avec parallax effect</li>
+                                <li>✓ Boutons animés au hover</li>
+                                <li>✓ Optimisé pour la conversion</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                </div>
+
+                <!-- Section compétences développées -->
+                <div class="skills-developed">
+                    <h2>Compétences développées à travers ces projets</h2>
+                    <div class="skills-list">
+                        <span class="skill-badge">Node.js</span>
+                        <span class="skill-badge">Express.js</span>
+                        <span class="skill-badge">REST API</span>
+                        <span class="skill-badge">MySQL</span>
+                        <span class="skill-badge">Architecture MVC</span>
+                        <span class="skill-badge">HTML5 Sémantique</span>
+                        <span class="skill-badge">CSS3 Avancé</span>
+                        <span class="skill-badge">Responsive Design</span>
+                        <span class="skill-badge">Flexbox & Grid</span>
+                        <span class="skill-badge">Animations CSS</span>
+                        <span class="skill-badge">UX/UI Design</span>
+                        <span class="skill-badge">Accessibilité Web</span>
+                        <span class="skill-badge">Base de données</span>
+                        <span class="skill-badge">Backend Development</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pied de page -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Mohamed Dramé. Tous droits réservés.</p>
+            <p>Projet de fin de session - HTML/CSS</p>
+        </div>
+    </footer>
+</body>
+</html>
